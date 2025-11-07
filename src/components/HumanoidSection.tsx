@@ -88,27 +88,27 @@ const HumanoidSection = () => {
       className="relative" 
       style={{ height: '300vh' }}
     >
-      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-background" id="astra-tech">
+      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white" id="why-humanoid">
         <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col">
           <div className="mb-2 md:mb-3">
             <div className="flex items-center gap-4 mb-2 md:mb-2 pt-8 sm:pt-6 md:pt-4">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 cosmic-glow opacity-0 animate-fade-in" style={{
+              <div className="pulse-chip opacity-0 animate-fade-in" style={{
                 animationDelay: "0.1s"
               }}>
-                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary text-primary-foreground mr-2">02</span>
-                <span className="text-primary">Astra Technology</span>
+                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">02</span>
+                <span>Humanoid</span>
               </div>
             </div>
             
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2 cosmic-text">
-              Power of the Astras
+            <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2">
+              Why Humanoid
             </h2>
           </div>
           
           <div ref={cardsContainerRef} className="relative flex-1 perspective-1000">
             {/* First Card */}
             <div 
-              className={`absolute inset-0 overflow-hidden shadow-xl cosmic-glow ${isFirstCardVisible ? 'animate-card-enter' : ''}`} 
+              className={`absolute inset-0 overflow-hidden shadow-xl ${isFirstCardVisible ? 'animate-card-enter' : ''}`} 
               style={{
                 ...cardStyle,
                 zIndex: 10,
@@ -117,22 +117,25 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  background: 'linear-gradient(135deg, hsl(var(--cosmic-navy)) 0%, hsl(var(--cosmic-blue)) 50%, hsl(var(--cosmic-cyan)) 100%)',
+                  backgroundImage: "url('/background-section1.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "top center",
+                  backgroundBlendMode: "overlay"
                 }}
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm text-primary border border-primary/30">
-                  <span className="text-sm font-medium">Energy Core</span>
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
+                  <span className="text-sm font-medium">The vision</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Ancient power meets adaptive AI technology
+                    We're giving AI a way to navigate the physical world
                   </h3>
                 </div>
               </div>
@@ -140,7 +143,7 @@ const HumanoidSection = () => {
             
             {/* Second Card */}
             <div 
-              className={`absolute inset-0 overflow-hidden shadow-xl cosmic-glow ${isSecondCardVisible ? 'animate-card-enter' : ''}`} 
+              className={`absolute inset-0 overflow-hidden shadow-xl ${isSecondCardVisible ? 'animate-card-enter' : ''}`} 
               style={{
                 ...cardStyle,
                 zIndex: 20,
@@ -150,22 +153,25 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  background: 'linear-gradient(135deg, hsl(var(--cosmic-purple)) 0%, hsl(var(--cosmic-cyan)) 100%)',
+                  backgroundImage: "url('/background-section2.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundBlendMode: "overlay"
                 }}
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm text-primary border border-primary/30">
-                  <span className="text-sm font-medium">Adaptive AI</span>
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
+                  <span className="text-sm font-medium">The vision</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Real-time flux intelligence adapts to every step
+                    We're bringing adaptive intelligence to where humans work
                   </h3>
                 </div>
               </div>
@@ -173,7 +179,7 @@ const HumanoidSection = () => {
             
             {/* Third Card */}
             <div 
-              className={`absolute inset-0 overflow-hidden shadow-xl cosmic-glow ${isThirdCardVisible ? 'animate-card-enter' : ''}`} 
+              className={`absolute inset-0 overflow-hidden shadow-xl ${isThirdCardVisible ? 'animate-card-enter' : ''}`} 
               style={{
                 ...cardStyle,
                 zIndex: 30,
@@ -183,22 +189,25 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  background: 'linear-gradient(180deg, hsl(var(--cosmic-navy)) 0%, hsl(var(--cosmic-purple)) 50%, hsl(var(--cosmic-cyan)) 100%)',
+                  backgroundImage: "url('/background-section3.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "bottom center",
+                  backgroundBlendMode: "overlay"
                 }}
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm text-primary border border-primary/30">
-                  <span className="text-sm font-medium">The Future</span>
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
+                  <span className="text-sm font-medium">The vision</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Mythology reimagined. <span className="text-primary">Performance redefined.</span>
+                    We're creating companions, <span className="text-[#FC4D0A]">not replacements</span>
                   </h3>
                 </div>
               </div>
