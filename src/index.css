@@ -17,92 +17,92 @@
 
 @layer base {
   :root {
-    --background: 200 100% 3%;
-    --foreground: 30 15% 84%;
+    --background: 225 50% 6%;
+    --foreground: 180 100% 90%;
 
-    --card: 200 80% 5%;
-    --card-foreground: 30 15% 84%;
+    --card: 225 40% 10%;
+    --card-foreground: 180 100% 90%;
 
-    --popover: 200 80% 5%;
-    --popover-foreground: 30 15% 84%;
+    --popover: 225 40% 10%;
+    --popover-foreground: 180 100% 90%;
 
-    --primary: 25 87% 41%;
-    --primary-foreground: 30 15% 84%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 225 50% 6%;
 
-    --secondary: 48 44% 55%;
-    --secondary-foreground: 200 100% 3%;
+    --secondary: 270 100% 65%;
+    --secondary-foreground: 225 50% 6%;
 
-    --muted: 200 50% 10%;
-    --muted-foreground: 30 15% 70%;
+    --muted: 225 30% 20%;
+    --muted-foreground: 180 50% 70%;
 
-    --accent: 48 44% 55%;
-    --accent-foreground: 200 100% 3%;
+    --accent: 270 100% 65%;
+    --accent-foreground: 225 50% 6%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 30 15% 84%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 200 50% 15%;
-    --input: 200 50% 15%;
-    --ring: 25 87% 41%;
+    --border: 225 30% 20%;
+    --input: 225 30% 20%;
+    --ring: 180 100% 50%;
 
     --radius: 1rem;
 
-    --sidebar-background: 200 80% 5%;
-    --sidebar-foreground: 30 15% 84%;
-    --sidebar-primary: 25 87% 41%;
-    --sidebar-primary-foreground: 30 15% 84%;
-    --sidebar-accent: 200 50% 15%;
-    --sidebar-accent-foreground: 30 15% 84%;
-    --sidebar-border: 200 50% 15%;
-    --sidebar-ring: 25 87% 41%;
+    --sidebar-background: 225 40% 10%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 225 50% 6%;
+    --sidebar-accent: 225 30% 20%;
+    --sidebar-accent-foreground: 180 100% 90%;
+    --sidebar-border: 225 30% 20%;
+    --sidebar-ring: 180 100% 50%;
     
-    /* AstraFlux cosmic gradients with new colors */
-    --gradient-cosmic: linear-gradient(135deg, hsl(200, 100%, 3%) 0%, hsl(25, 87%, 41%) 35%, hsl(48, 44%, 55%) 60%, hsl(30, 15%, 84%) 100%);
-    --gradient-cosmic-vertical: linear-gradient(180deg, hsl(200, 100%, 3%) 0%, hsl(25, 87%, 41%) 50%, hsl(48, 44%, 55%) 100%);
-    --gradient-glow: radial-gradient(circle at center, hsl(25, 87%, 41% / 0.3) 0%, transparent 70%);
+    /* AstraFlux cosmic gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(225, 50%, 6%) 0%, hsl(200, 100%, 25%) 35%, hsl(180, 100%, 50%) 60%, hsl(270, 100%, 65%) 100%);
+    --gradient-cosmic-vertical: linear-gradient(180deg, hsl(225, 50%, 6%) 0%, hsl(200, 100%, 20%) 50%, hsl(270, 100%, 40%) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsl(180, 100%, 50% / 0.3) 0%, transparent 70%);
     
     /* Glow effects */
-    --glow-primary: 0 0 20px hsl(25, 87%, 41% / 0.5), 0 0 40px hsl(25, 87%, 41% / 0.3);
-    --glow-secondary: 0 0 20px hsl(48, 44%, 55% / 0.5), 0 0 40px hsl(48, 44%, 55% / 0.3);
-    --glow-mixed: 0 0 20px hsl(25, 87%, 41% / 0.4), 0 0 40px hsl(48, 44%, 55% / 0.4);
+    --glow-cyan: 0 0 20px hsl(180, 100%, 50% / 0.5), 0 0 40px hsl(180, 100%, 50% / 0.3);
+    --glow-purple: 0 0 20px hsl(270, 100%, 65% / 0.5), 0 0 40px hsl(270, 100%, 65% / 0.3);
+    --glow-mixed: 0 0 20px hsl(180, 100%, 50% / 0.4), 0 0 40px hsl(270, 100%, 65% / 0.4);
   }
 
   .dark {
-    --background: 200 100% 3%;
-    --foreground: 30 15% 84%;
+    --background: 225 50% 6%;
+    --foreground: 180 100% 90%;
 
-    --card: 200 80% 5%;
-    --card-foreground: 30 15% 84%;
+    --card: 225 40% 10%;
+    --card-foreground: 180 100% 90%;
 
-    --popover: 200 80% 5%;
-    --popover-foreground: 30 15% 84%;
+    --popover: 225 40% 10%;
+    --popover-foreground: 180 100% 90%;
 
-    --primary: 25 87% 41%;
-    --primary-foreground: 30 15% 84%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 225 50% 6%;
 
-    --secondary: 48 44% 55%;
-    --secondary-foreground: 200 100% 3%;
+    --secondary: 270 100% 65%;
+    --secondary-foreground: 225 50% 6%;
 
-    --muted: 200 50% 10%;
-    --muted-foreground: 30 15% 70%;
+    --muted: 225 30% 20%;
+    --muted-foreground: 180 50% 70%;
 
-    --accent: 48 44% 55%;
-    --accent-foreground: 200 100% 3%;
+    --accent: 270 100% 65%;
+    --accent-foreground: 225 50% 6%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 30 15% 84%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 200 50% 15%;
-    --input: 200 50% 15%;
-    --ring: 25 87% 41%;
-    --sidebar-background: 200 80% 5%;
-    --sidebar-foreground: 30 15% 84%;
-    --sidebar-primary: 25 87% 41%;
-    --sidebar-primary-foreground: 30 15% 84%;
-    --sidebar-accent: 200 50% 15%;
-    --sidebar-accent-foreground: 30 15% 84%;
-    --sidebar-border: 200 50% 15%;
-    --sidebar-ring: 25 87% 41%;
+    --border: 225 30% 20%;
+    --input: 225 30% 20%;
+    --ring: 180 100% 50%;
+    --sidebar-background: 225 40% 10%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 225 50% 6%;
+    --sidebar-accent: 225 30% 20%;
+    --sidebar-accent-foreground: 180 100% 90%;
+    --sidebar-border: 225 30% 20%;
+    --sidebar-ring: 180 100% 50%;
   }
 }
 
