@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HumanoidSection from "@/components/HumanoidSection";
+import RobotShowcaseSection from "@/components/RobotShowcaseSection";
 import SpecsSection from "@/components/SpecsSection";
 import DetailsSection from "@/components/DetailsSection";
 import ImageShowcaseSection from "@/components/ImageShowcaseSection";
@@ -13,6 +14,21 @@ import MadeByHumans from "@/components/MadeByHumans";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Update page title
+  useEffect(() => {
+    document.title = "AstraFlux | Charge Your Next Move - AI-Powered Sneakers";
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'AstraFlux sneakers blend mythological power with AI technology. Experience adaptive cushioning, energy cores, and futuristic design for the ultimate performance footwear.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'AstraFlux sneakers blend mythological power with AI technology. Experience adaptive cushioning, energy cores, and futuristic design for the ultimate performance footwear.';
+      document.head.appendChild(meta);
+    }
+  }, []);
   // Initialize intersection observer to detect when elements enter viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -59,18 +75,16 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="space-y-4 sm:space-y-8"> {/* Reduced space on mobile */}
+      <main className="space-y-4 sm:space-y-8">
         <Hero />
-        <HumanoidSection />
-        <SpecsSection />
-        <DetailsSection />
         <ImageShowcaseSection />
+        <RobotShowcaseSection />
+        <SpecsSection />
         <Features />
         <Testimonials />
         <Newsletter />
-        <MadeByHumans />
       </main>
       <Footer />
     </div>
