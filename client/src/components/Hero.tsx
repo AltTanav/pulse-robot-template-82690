@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import LottieAnimation from "./LottieAnimation";
 import heroSneaker from "@/assets/astraflux-hero-sneaker.jpg";
+import { GrainGradient } from '@paper-design/shaders-react';
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -89,15 +90,28 @@ const Hero = () => {
   
   return (
     <section 
-      className="overflow-hidden relative bg-cosmic-gradient" 
+      className="overflow-hidden relative" 
       id="hero" 
       style={{
         padding: isMobile ? '100px 12px 40px' : '120px 20px 60px'
       }}
     >
-      <div className="absolute -top-[10%] -right-[5%] w-1/2 h-[70%] bg-cosmic-glow opacity-30 blur-3xl rounded-full"></div>
-      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-3xl cosmic-glow"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-secondary/20 rounded-full blur-3xl cosmic-glow"></div>
+      <div className="absolute inset-0 -z-10">
+        <GrainGradient
+          width={1280}
+          height={720}
+          colors={["#c6750c", "#beae60", "#d7cbc6"]}
+          colorBack="#000a0f"
+          softness={0.7}
+          intensity={0.15}
+          noise={0.5}
+          shape="wave"
+          speed={1}
+        />
+      </div>
+      <div className="absolute -top-[10%] -right-[5%] w-1/2 h-[70%] bg-primary/10 opacity-30 blur-3xl rounded-full"></div>
+      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-secondary/20 rounded-full blur-3xl"></div>
       
       <div className="container px-4 sm:px-6 lg:px-8" ref={containerRef}>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
