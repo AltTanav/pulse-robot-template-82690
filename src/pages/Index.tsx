@@ -10,7 +10,6 @@ import ImageShowcaseSection from "@/components/ImageShowcaseSection";
 import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
-import MadeByHumans from "@/components/MadeByHumans";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -80,8 +79,10 @@ const Index = () => {
       <main className="space-y-4 sm:space-y-8">
         <Hero />
         <ImageShowcaseSection />
+        <HumanoidSection />
         <RobotShowcaseSection />
         <SpecsSection />
+        <DetailsSection />
         <Features />
         <Testimonials />
         <Newsletter />
